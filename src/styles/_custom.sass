@@ -1,19 +1,338 @@
 .banner-principal-decorativo
   &-1
-    animation: float1 3.5s ease-in-out infinite alternate
+    animation: rotation 13.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 75%
+    right: 83%
   &-2
-    animation: float1 2.8s ease-in-out infinite alternate
+    animation: float1 13.5s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
-
+    top: 4%
+    right: 75%
+  &-3
+    animation: float1 12.8s ease-in-out infinite alternate
+    position: absolute
+    top: 50%
+    right: 28%
+  &-4
+    animation: float1 13.5s ease-in-out infinite alternate
+    position: absolute
+    top: 35%
+    right: 65%
+  &-5
+    animation: float1 13.5s ease-in-out infinite alternate
+    position: absolute
+    top: 35%
+    right: 5%
+  
+@keyframes rotation
+  from 
+    transform: rotate(0deg)
+  to 
+    transform: rotate(359deg)
+ 
 @keyframes float1
   0%
-    transform: translateY(20px)
+    transform: translateY(70px)
 
   100%
     transform: translateY(0px)
+  
+.banner-interno
+  height: 114px
+.banner-principal .tarjeta
+  background-position: inherit !important
+.titulo-principal__numero
+  background-color: #EB6F2D !important
+.titulo-principal__numero span
+  color: #fff !important
+.curso-main-container > .container
+  overflow-x: clip !important
+.titulo-segundo:after
+  border-left-color: #EB6F2D !important
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
+  color: #12263F !important
+.banner-principal__img img
+  max-width: 500px !important
+  display: inline
+  position: relative
+  bottom: -6px
+.d-none.d-lg-block.col-lg-5.px-0.banner-principal__img
+  padding: 0 !important
+  text-align: center
+
+.banner-interno__fondo
+  background-image: url("../assets/curso/images/header/interno.svg") !important
+  background-repeat: no-repeat 
+
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6 
+  color: #fff !important
+
+.titulo-principal__numero   
+  background-color: #80CAB6 !important
+
+.titulo-principal__numero span 
+  color: #000!important
+
+.cs
+  overflow-y: hidden
+
+.mg-top-1
+  margin-top: -70px !important
+
+.m-right
+  right: -40% !important
+  @media (max-width: 992px)
+    right: -1% !important
+
+.horizontal-scroll
+  align-items: stretch !important
+
+.th-1
+  background-color: #F3F9FF
+
+.th-2
+  background-color: #0540B7
+
+.back-tab
+  background-color: #D3EDE5
+
+.c-check
+  color: #80CAB6
+
+.c-check-1
+  font-size: 12px
+
+.c-check-2
+  color: #0540B7
+
+.left
+  margin-left: 12px
+  margin-bottom: -22px !important
+  @media (max-width: $bp-max-md)
+    margin-bottom: 30px !important
+
+.hr
+  height: 35vh
+  width: 0vh !important
+  color: #000
+  background-color: #000 
+  border: 1px !important
+  
+.f
+  font-size: 10px !important
+
+.titulo-segundo::after 
+  border-left-color: #80CAB6 !important
+
+.bg_grad-02
+  background-color: #ECF7F4
+  background-repeat: no-repeat
+  background-size: cover
+  @media (max-width: 992px)
+    width: 100%
+    margin-left: -24px
+  @media (max-width: 768px)
+    width: 100%
+    margin-left: 5px
+  @media (max-width: 576px)
+    width: 100%
+    margin-left: 2px
+  @media (max-width: 412px)
+    margin-left: -2px !important
+  @media (max-width: 390px)
+    margin-left: -5px !important
+
+.slyder-a__tipo-b .slyder-a__btn--atrs 
+  @media (max-width: $bp-max-md) 
+    transform: translateY(14%) rotate(90deg) !important
+    left: -10px !important
+  @media (min-width: $bp-min-lg) 
+    transform: translateY(14%) rotate(90deg) !important
+    left: -10px !important
+    top: 12px !important
+
+  
+.slyder-a__tipo-b .slyder-a__btn--sigt 
+  @media (max-width: $bp-max-md) 
+    transform: translateY(14%) rotate(-90deg) !important
+    right: -15px !important
+  @media (min-width: $bp-min-lg) 
+    transform: translateY(14%) rotate(270deg) !important
+    left: -10px !important
+    top: 12px !important
+
+.slyder-a__bullets 
+  @media (max-width: $bp-max-md) 
+    display: flex
+    z-index: 10000
+    top: 12px
+  @media (min-width: $bp-min-lg) 
+    display: flex
+    z-index: 10000
+    top: 12px
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs 
+  width: 50px
+  height: 50px
+  background-color: #80CAB6
+  border-radius: 50%
+  background-repeat: no-repeat
+  background-size: 16px 24px
+  background-position: center
+  border: 1px solid #D8ECFF
+  top: 50%
+  z-index: 10000
+  opacity: 0.7
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3)
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+  cursor: pointer
+
+.slyder-a__bullets__item--active 
+    background-color: #80CAB6 !important
+    border: 0    
+
+.slyder-a__bullets__item 
+    background-color: #C6E8DF
+    border: 0
+
+.linea-tiempo-d__item__content__title 
+  cursor: pointer
+  font-size: 18px
+
+.linea-tiempo-d.color-secundario.especial .linea-tiempo-d__item--selected .linea-tiempo-d__item__number 
+  background-color: #FFF9E7 !important
+  color: #12263F
+
+.linea-tiempo-d.color-secundario.especial
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__number
+      background-color: #DCE2CB !important
+      color: $color-sistema-texto
+    .linea-tiempo-d__item__content
+      background-color: #DCE2CB !important
+      color: #000
+
+.acordion
+  .tarjeta--azul
+    background-color: #EAE0FF
+  .acordion__activo
+    background-color: #E8E8E8 !important
+
+.tarjeta_grey-1
+  background-color: #ECF7F4 !important
+  width: 90%
+  height: 550px !important
+  background-size: cover !important
+    background-color:#ECF7F4
+    width: 100% !important
+  @media (max-width: 768px)
+    background-color: #ECF7F4
+    width: 100% !important
+  @media (max-width: 576px)
+    background-color: #ECF7F4
+    width: 100% !important
+    height: auto !important
+    font-size: 14px
+  @media (max-width: 412px)
+    background-color: #ECF7F4
+    width: 100% !important
+    height: auto !important
+    font-size: 11px
+  @media (max-width: 397px)
+    background-color: #ECF7F4
+    width: 100% !important
+
+.tarjeta-blanca
+  background-color: #FDF8E4
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+  border-bottom-right-radius: 15px
+  border-bottom-left-radius: 15px
+  box-shadow: 2px 4px 8px #cdcdcd
+  width: 395px !important
+  height: auto!important
+  @media (max-width: 992px)
+    background-size: 100%
+    width: 380px !important
+    height: 255px !important
+    margin-left: -40px !important
+    margin-bottom: -120px !important
+  @media (max-width: 768px)
+    background-size: 100%
+    width: 300px !important
+    height: 250px !important
+    margin-left: -40px !important
+    margin-bottom: -45px !important
+    font-size: 11px
+  @media (max-width: 576px)
+    background-color: #FFFFFF
+    width: 100% !important
+    height: 580px !important
+    margin-left: -100px !important
+  @media (max-width: 412px)
+    background-color: #FFFFFF
+    width: 250px !important
+    height: auto!important
+    margin-left: -38px !important
+    font-size: 11px
+    margin-bottom: 8px !important
+  @media (max-width: 397px)
+    background-color: #FFFFFF
+    background-size: 100%
+    width: 300px !important
+    height: 215px !important
+    margin-left: -40px !important
+    margin-top: 250px !important
+    font-size: 8px 
+
+
+.fondo-1
+  background-image: url('../assets/curso/images/tema1/back_intro.svg')
+  background-size: cover
+  background-repeat: no-repeat
+
+.color-custom-1
+	background-color: #80CAB6
+	&::before
+		background-color: #FFF
+
+.color-custom-2
+	background-color: #CED371 
+	&::before
+		background-color: #EFF0CF
+
+.color-custom-3
+	background-color: #F1CC4B
+	&::before
+		background-color: #FFF
+
+.color-custom-4
+	background: linear-gradient(180deg, rgba(64,145,216,1) 12%, rgba(20,50,124,1) 91%)
+
+.jumbotron
+  background-color: #D9E2F4
+  height: auto
+
+.jumbotron-1
+  background-color: #0540B7
+  height: auto
+  border-radius: 20px
+
+.jumbotron-2
+  background-color: #F3F9FF
+
+.jumbotron-3
+  background-color: #E8E8E8
+
+.jumbotron-4
+  background-color: #FDF8E4
+
+.jumbotron-5
+  background-color: #F3F9FF
+  width: 180px !important
+
+.jumbotron-6
+  background-color: #F3F9FF
+  width: 300px !important
+  
